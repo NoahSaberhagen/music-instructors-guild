@@ -61,22 +61,29 @@ const aboutSection = document.querySelector('#about');
 const instructorsSection = document.querySelector('#instructors')
 const contactUsSection = document.querySelector('#contact-us')
 
-let currentSection = aboutSection;
 
-const updateDisplay = (nextSectionId) => {
-  console.log(nextSectionId);
-
+const setSectionsStyleNone = () => {
   let sections = [aboutSection, instructorsSection, contactUsSection];
 
   sections.forEach((section) => {
     section.setAttribute('style', 'display: none')
   })
+}
+
+setSectionsStyleNone()
+
+let currentSection = aboutSection;
+currentSection.setAttribute('style', '')
+
+const updateDisplay = (nextSectionId) => {
+  console.log(nextSectionId);
+
+  setSectionsStyleNone()
 
   currentSection = document.querySelector(`#${nextSectionId}`)
 
   currentSection.setAttribute('style', '')
 }
-
 
 document
   .getElementById('button-about')
