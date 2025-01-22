@@ -15,26 +15,31 @@ while (instructorNum < 25) {
   avatar.setAttribute('src', url)
   card.appendChild(avatar);
 
+  const textContainer = document.createElement('div')
+  textContainer.classList = 'instructor-card-text-container'
+  card.appendChild(textContainer);
+
   const nameH3 = document.createElement('h3')
   nameH3.innerText = faker.person.fullName()
-  card.appendChild(nameH3);
+  textContainer.appendChild(nameH3);
 
   const schedule = document.createElement('p')
   switch (true) {
-    case Math.random() > 0.6:
-      schedule.innerText = 'in person'
+    case Math.random() >= 0.6:
+      schedule.innerText = 'lesson format: in person'
       break;
     case 0.6 >= Math.random() > 0.3:
-      schedule.innerText = 'hybrid'
+      schedule.innerText = 'lesson format: hybrid'
       break;
     case 0.3 >= Math.random():
-      schedule.innerText = "virtual"
+      schedule.innerText = "lesson format: virtual"
   }
-  card.appendChild(schedule);
+  schedule.setAttribute('style', 'font-weight: bold;')
+  textContainer.appendChild(schedule);
 
   const bio = document.createElement('p')
   bio.innerText = faker.lorem.sentences(Math.random() * 10)
-  card.appendChild(bio);
+  textContainer.appendChild(bio);
 
   instructorNum += 1;
 }
