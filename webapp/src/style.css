@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav stuff */
+#main-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #eaeaea;
+  transition: top 500ms ease-in-out;
+}
+
+#main-nav.scroll-up {
+  top: 0;
+}
+
+#main-nav.scroll-down {
+  top: -100%;
+}
+
+#main-nav.scroll-up,
+#main-nav:focus-within {
+  top: 0;
+}
