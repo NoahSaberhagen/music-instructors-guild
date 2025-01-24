@@ -2,49 +2,54 @@ body {
   margin: 0;
   padding: 0;
 
-  --primary-color: #7D53DE;
-  --charcoal: #111318;
-  --ivory: #FAFCF4;
+  --primary-color: #FFFFFF;
+  --secondary-color: #111318;
+  --accent: #2E5EAA;
 
-  background-color: var(--ivory);
-  color: var(--charcoal);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* nav stuff */
 #main-nav {
-  background-color: var(--ivory);
+  height: 3.5rem;
+  padding-left: 2rem;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   position: sticky;
   top: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   /* we'll only want this on horizontal screens */
-  padding: 0rem 2rem;
   transition: top 500ms ease-in-out;
 }
 
-#logo {
-  position: relative;
-  top: 0;
-  margin: 0;
+#main-nav h1 {
+  text-shadow: 1px 1px 2px var(--accent);
+  font-family: "Lobster Two", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #main-nav button {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
   margin: 0rem 2rem;
-  background-color: var(--ivory); /* Blue */
+  background-color: var(--secondary-color);
   color: var(--primary-color); 
   border: none;
   cursor: pointer;
+  text-shadow: 1px 1px 2px var(--accent);
+  font-family: "Lobster Two", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
 }
 
 #main-nav ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -73,7 +78,7 @@ main {
 #instructors .instructor-card {
   display: flex;
   padding: 0rem 1rem;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 #instructors .instructor-card-text-container {
@@ -88,7 +93,7 @@ main {
 
 /* contact us */
 #contact-us {
-    min-height: 70vh;
+  min-height: 70vh;
   display: flex;
   flex-direction:  column;
   justify-content: center;
@@ -102,10 +107,33 @@ main {
   margin: 0rem 2rem;
   width: 8rem;
   height: 2.5rem;
-  background-color: var(--primary-color); /* Blue */
-  color: var(--ivory);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  text-shadow: 1px 1px 2px var(--accent);
+  font-family: "Lobster Two", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
 }
 
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem; 
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer i {
+  cursor: pointer;
+}
