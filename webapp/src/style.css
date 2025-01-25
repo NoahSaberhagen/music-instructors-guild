@@ -1,24 +1,18 @@
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #111318;
+  --accent: #2E5EAA;  
+  --navbar-height-negative: calc(100vh - var(--browser-font-size) * 2.5);
+}
+
 body {
   margin: 0;
   padding: 0;
-
-  --primary-color: #FFFFFF;
-  --secondary-color: #111318;
-  --accent: #2E5EAA;
-
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-/* main */
-main {
-  min-height: 100%;
-  padding: 0rem 2rem;
-  flex: 1 0 auto;
-  overflow-y: auto; 
 }
 
 /* header */
@@ -27,9 +21,19 @@ header i {
   cursor: pointer;
 }
 
+/* main */
+main {
+  min-height: var(--navbar-height-negative);
+  border: 1px solid red;
+  height: 100%;
+  padding: 0rem 2rem;
+  flex: 1 0 auto;
+  overflow-y: auto; 
+}
+
 /* nav */
 #main-nav {
-  height: 3.5rem;
+  height: 2.5rem;
   padding-left: 2rem;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -38,7 +42,6 @@ header i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* we'll only want this on horizontal screens */
   transition: top 500ms ease-in-out;
 }
 
