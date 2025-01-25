@@ -132,11 +132,23 @@ main {
   align-items: center;
 }
 
-#contact-us h3 {
-  font-family: "Lobster Two", serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-style: normal;
+#contact-us .interest-form-title {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact-us .interest-form-title button {
+  cursor: pointer;
+}
+
+#contact-us .interest-form > * {
+  margin-bottom: 0.5rem;
+}
+
+#contact-us .interest-form {
+  padding-bottom: 1rem;
 }
 
 #contact-us button {
