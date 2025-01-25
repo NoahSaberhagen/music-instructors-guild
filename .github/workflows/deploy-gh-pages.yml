@@ -18,7 +18,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        uses: actions/github-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist # Specify the path to your built files
