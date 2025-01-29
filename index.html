@@ -6,34 +6,64 @@
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/6eaf69b5dd.js" crossorigin="anonymous"></script>    
-    <title>Music Instructors Coalition</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    <title>Music Instructors Coalition</title>
   </head>
   <body>
-    <header id="main-nav">
-      <h1>Music Instructors Coalition 🎹</h1>
-      <i class="fa-brands fa-instagram fa-2xl"></i>
-      <i class="fa-brands fa-facebook fa-2xl"></i>
-      <nav>
-        <ul>
-          <li><button id="button-about">About</button></li>
-          <li><button id="button-instructors">Instructors</button></li>
-          <li><button id="button-contact-us">Contact Us</button></li>
-        </ul>
-      </nav>
+    <header id="navbar">
+        <div id="logo-container">
+          <h1>MUSIC INSTRUCTORS COALITION</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><button id="button-about">About</button></li>
+            <li><button id="button-instructors">Instructors</button></li>
+            <li><button id="button-contact-us">Contact Us</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="about">
-        <h2>Welcome!</h2>
-        <p>The Music Instructors Coalition connects aspiring musicians with exceptional teachers. We carefully curate a network of experienced instructors based on your location, availability, and preferred learning style. Find your perfect match and ignite your musical journey!</p>
-        <p>At the Music Instructors Coalition, we believe that every student deserves a high-quality music education. We've built a community of passionate and skilled music teachers who are dedicated to helping you achieve your musical goals.</p>
-        <h3>Here's how we help:</h3>
-        <ul>
-          <li>Personalized Matching: We carefully match you with instructors who align with your learning style, musical interests, and schedule.</li>
-          <li>Extensive Network: Our network boasts a diverse range of talented teachers specializing in various instruments, vocal techniques, and musical genres.</li>
-          <li>Focus on Student Success: We prioritize your individual needs and provide ongoing support to ensure a positive and rewarding learning experience.</li>
-        </ul>
-        <a>Join the Music Instructors Coalition today and discover your musical potential!</a>
+        <div id="about-intro">
+          <h2>Everybody needs a great teacher.</h2>
+          <div id="about-intro-cta">
+            <button>Find yours here.</button>
+          </div>
+        </div>
+        <div id="about-details">
+          <div id="about-details-text">
+            <p>At the MUSIC INSTRUCTORS COALITION, we provide:</p>
+            <ul>
+              <li>
+                <h3>Personalized Matching</h3>
+                <hr/> 
+                <p>
+                  We carefully match you with instructors 
+                  who align with your learning style, 
+                  musical interests, and schedule.
+                </p>
+              </li>
+              <li>
+                <h3>Extensive Network</h3>
+                <hr/> 
+                <p>
+                  Our network boasts a 
+                  diverse range of talented teachers 
+                  specializing in various instruments, 
+                  vocal techniques, and musical genres.
+                </p>
+              </li>
+              <li>
+                <h3>Focus on Student Success</h3> 
+                <hr/>
+                <p>
+                  We prioritize your individual needs and provide ongoing support to ensure a positive and rewarding learning experience.</li>
+                </p>
+            </ul>
+          </div>
+        </div>
+        <div id="about-testimonials">
+        </div>
       </section>
       <section id="instructors">
         <h2>Our instructors</h2>
@@ -41,7 +71,6 @@
       <section id="contact-us">
         <div id="contact-us-form">
           <div id="contact-us-start">
-            <h2>Interested in music lessons? <br> Join us today! 🤗</h2>
             <div id="contact-us-start-options">
               <p>I am a prospective...</p>
               <button id="contact-us-nav-instructor">Instructor</button>
@@ -244,6 +273,7 @@
         </div>
       </section>
     </main>
+    <script src="https://kit.fontawesome.com/6eaf69b5dd.js" crossorigin="anonymous"></script>x`
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/main-nav.js"></script>
     <script type="module" src="./src/instructors.js"></script>
