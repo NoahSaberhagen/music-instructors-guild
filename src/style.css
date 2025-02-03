@@ -59,6 +59,7 @@ main {
 
 /* nav */
 #navbar {
+  z-index: 1;
   height: var(--navbar-height-rem);
   padding: 0% 12.5%;
   margin: 0;
@@ -98,50 +99,56 @@ a {
   text-decoration-line: none;
 }
 
-/* about */
-#about {
+/* main sections */
+#about, #contact-us {
   height: var(--navbar-height-negative);
   width: 100%;
 }
 
+#contact-us {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
 #about-graphic-1 {
-  border-top: 0.25rem solid var(--secondary-color);
-  border-bottom: 0.25rem solid var(--secondary-color);
+  box-shadow: inset 0px 0px 20px 5px var(--secondary-color);
+  isolation: isolate;
   background-color: var(--primary-color);
   left: 0;
-  top: 8%;
+  top: 2%;
   position: absolute;
   margin: 2% 0;
-  height: 66%;
+  height: 70%;
   width: 100vw;
   overflow: hidden;
 }
 
 #about-cta {
-  border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   border-radius: 8px;
   position: absolute;
+  top: 10%;
   left: 12.5%;
-  top: 16%;
-  height: 20rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 22%;
 }
 
 #about-cta h2 {
   text-align: left;
   color: var(--secondary-color);
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--text-l);
   width: 100%;
 }
 
 #about-cta p {
+  margin-top: 2rem;
   font-size: var(--text-s);
   font-weight: 300;
 }
@@ -157,83 +164,11 @@ a {
   border: none;
   border-radius: 5rem;
   padding: 0 2rem;
-}
-
-#about-details {
-  margin-top: var(--text-xs);
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-#about-details ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-
-#about-details li {
-  max-width: 30%;
-  margin-right: var(--text-l); 
-  margin-top: var(--text-xs);
-}
-
-#about-details li > * {
-  font-weight: 300;
-  padding-left: var(--text-xs);
-}
-
-#about-details-cta {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-details button {
-  font-family: "Lexend", serif;
-  font-optical-sizing: auto;
-  width: auto;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 1.2rem;
-  font-style: normal;
-}
-
-/* instructors */
-#instructors .instructor-card {
-  display: flex;
-  padding: 0rem 1rem;
-}
-
-#instructors .instructor-card-text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#instructors img {
-  height: 100px;
-  margin: 1rem;
-}
-
-/* contact us */
-#contact-us {
-  padding-top: var(--text-l);
-  max-height: var(--navbar-height-negative);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  margin-top: 2rem;
 }
 
 #contact-us-title {
-  width: 20%;
+  margin-top: 2rem;
 }
 
 #contact-us-title h2 {
@@ -241,20 +176,55 @@ a {
   font-family: "Lexend", serif;
   font-optical-sizing: auto;
   font-size: var(--text-l); 
-  font-weight: 800;
-  font-size: var(--text-m);
+  font-weight: 700;
 }
 
 #contact-us-title p {
   font-size: var(--text-s);
+  font-weight: 300;
+}
+
+#contact-us-form-selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contact-us-form-selector p {
+  font-size: var(--text-s);
+  margin-right: 0.5rem;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  color: var(--primary-color);
+  background-color: var(--accent-1);
+  padding: 0.2rem 0.5rem;
+}
+
+.select-container select {
+  font-size: var(--text-s);
+  appearance: none;
+  border: none;
+  color: var(--primary-color);
+  background-color: var(--accent-1);
 }
 
 #instructor-interest-form {
+  border: 1px solid blue;
   height: 100%;
   width: 50%;
   padding: 0rem;
-  margin-left: var(--text-l);
+  margin-top: 2rem;
 }
+
+
 
 #instructor-interest-form h2 {
   margin: 0;

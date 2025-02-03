@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./src/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <title>Music Instructors Coalition - Contact Us</title>
 </head>
 <body>
@@ -16,15 +16,27 @@
     <nav>
       <ul>
         <li><a href="./index.html">About</a></li>
-        <li><a class="active" href="./contact.html" id="button-contact-us"><em style="font-weight: 800">Contact</em></a></li>
+        <li><a class="active" href="./contact.html" id="button-contact-us">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="contact-us">
       <div id="contact-us-title">
-        <h2>Let us ignite your musical training.</h2>
+        <h2>Ignite your musical training.</h2>
         <p>Send us your contact info and we'll put you in touch with the best teachers for your needs!</p>
+      </div>
+      <div id="contact-us-form-selector">
+
+        <p>I am a(n)</p>
+        <div class="select-container">
+          <select>
+            <option>student</option>
+            <option>instructor</option>
+            <i class="fa-solid fa-arrows-up-down" style="color: #000000;"></i>
+          </select>
+          <i class="fa-solid fa-arrows-up-down" style="color: var(--primary-color);"></i>
+        </div>
       </div>
       <form id="instructor-interest-form">
         <div class="form-section">
@@ -118,5 +130,6 @@
     </section>
   </main>
   <script type="module" src="./src/contact-us-form.js"></script>
+  <script src="https://kit.fontawesome.com/6eaf69b5dd.js" crossorigin="anonymous"></script>
 </body>
 </html>
