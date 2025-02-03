@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    <title>Music Instructors Coalition</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Music Instructors Coalition - About</title>
   </head>
   <body>
     <header id="navbar">
-      <h1>MUSIC INSTRUCTORS COALITION</h1>
+      <h1>the Music Instructors Coalition</h1>
       <nav>
         <ul>
-          <li><a class="active" href="./index.html">About</a></li>
+          <li><a href="./index.html">About</a></li>
           <li><a href="./contact.html" id="button-contact-us">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about">
-        <div id="about-intro">
-          <h2>Everybody needs a great teacher.</h2>
-          <div id="about-intro-cta">
-            <button>
-              Find yours 
-              <em style="color: var(--accent)">here.</em>
-            </button>
-          </div>
+        <div id="about-graphic-1">
+          <img src="./assets/pexels-pixabay-210764.jpg" alt="pexels-pixabay-210764.jpg">
         </div>
-        <div id="about-details">
+        <div id="about-cta">
+          <h2>Meet your next favorite<br> music instructor.</h2>
+          <p>At the Music Instructors Coalition, we
+            carefully match you with our instructors <br>
+            who align with your learning style,
+            musical interests, and schedule.</p>
+          <button>CONTACT US</button>
+        </div>
+        <!-- <div id="about-details">
           <div id="about-details-text">
-            <p>At the MUSIC INSTRUCTORS COALITION, we provide:</p>
             <ul>
               <li>
                 <h3>Personalized Matching</h3>
@@ -62,219 +64,12 @@
           </div>
         </div>
         <div id="about-testimonials">
-        </div>
-      </section>
-      <section id="instructors">
-      </section>
-      <section id="contact-us">
-        <div id="contact-us-form">
-          <div id="contact-us-start">
-            <div id="contact-us-start-options">
-              <p>I am a prospective...</p>
-              <button id="contact-us-nav-instructor">Instructor</button>
-              <p>/</p>
-              <button id="contact-us-nav-student">Student</button>
-            </div>
-          </div>
-          <div id="contact-us-instructor">
-            <form class="interest-form">
-              <div class="interest-form-title">
-                <h3>Contact / Prospective Instructors</h3>
-                <button class="go-back">Go back</button>
-              </div>
-              <div>
-                <label for="firstName">First Name:</label><br>
-                <input type="text" id="firstName" name="firstName" required>
-              </div>
-              <div>
-                <label for="lastName">Last Name:</label><br>
-                <input type="text" id="lastName" name="lastName" required>
-              </div>
-              <div>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div>
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              </div>
-              <div>
-                <label for="address">Home Address:</label><br>
-                <input type="text" id="address" name="address" required>
-              </div>
-              <div>
-                <label for="instruments">Instruments:</label><br>
-                <select id="instruments" name="instruments[]" multiple required>
-                  <option value="piano">Piano</option>
-                  <option value="guitar">Guitar</option>
-                  <option value="violin">Violin</option>
-                  <option value="voice">Voice</option>
-                  <option value="drums">Drums</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="otherInstruments">Other Instruments:</label><br>
-                <input type="text" id="otherInstruments" name="otherInstruments">
-              </div>
-              <div>
-                <label for="schedule">Schedule:</label><br>
-                <select id="schedule" name="schedule" required>
-                  <option value="">Select Schedule</option>
-                  <option value="inPerson">In-Person</option>
-                  <option value="virtual">Virtual</option>
-                  <option value="hybrid">Hybrid</option>
-                </select>
-              </div>
-              <div>
-                <label for="daysOfWeek">Days of Week Available:</label><br>
-                <select id="daysOfWeek" name="daysOfWeek[]" multiple required>
-                  <option value="monday">Monday</option>
-                  <option value="tuesday">Tuesday</option>
-                  <option value="wednesday">Wednesday</option>
-                  <option value="thursday">Thursday</option>
-                  <option value="friday">Friday</option>
-                  <option value="saturday">Saturday</option>
-                </select>
-              </div>
-              <div>
-                <label for="timeframe">Timeframe:</label><br>
-                <input type="time" id="timeframeStart" name="timeframeStart" required> 
-                <span>to</span>
-                <input type="time" id="timeframeEnd" name="timeframeEnd" required>
-              </div>
-              <div>
-                <label for="website">Website Link (Optional):</label><br>
-                <input type="url" id="website" name="website">
-              </div>
-              <div>
-                <label for="coverLetter">Cover Letter:</label><br>
-                <textarea id="coverLetter" name="coverLetter" rows="5" cols="40" maxlength="5000" required></textarea>
-              </div>
-              <div>
-                <label for="llc">Do you have your own LLC?</label><br>
-                <input type="radio" id="llcYes" name="llc" value="yes"> Yes
-                <input type="radio" id="llcNo" name="llc" value="no"> No
-              </div>
-              <div>
-                <label for="resume">Resume Upload:</label><br>
-                <input type="file" id="resume" name="resume" required>
-              </div>
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-          <div id="contact-us-student">
-            <div class="interest-form-title">
-              <h3>Contact / Propspective Students</h3>
-              <button class="go-back">Go back</button>
-            </div>
-            <form class="interest-form">
-              <div>
-                <label for="firstName">Your First Name:</label><br>
-                <input type="text" id="firstName" name="firstName" required>
-              </div>
-              <div>
-                <label for="lastName">Your Last Name:</label><br>
-                <input type="text" id="lastName" name="lastName" required>
-              </div>
-              <div>
-                <label for="phone">Your Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              </div>
-              <div>
-                <label for="studentFirstName">Student First Name:</label><br>
-                <input type="text" id="studentFirstName" name="studentFirstName" required>
-              </div>
-              <div>
-                <label for="studentLastName">Student Last Name:</label><br>
-                <input type="text" id="studentLastName" name="studentLastName" required>
-              </div>
-              <div>
-                <label for="instrument">Instrument:</label><br>
-                <select id="instrument" name="instrument" required>
-                  <option value="">Select Instrument</option>
-                  <option value="piano">Piano</option>
-                  <option value="guitar">Guitar</option>
-                  <option value="violin">Violin</option>
-                  <option value="voice">Voice</option>
-                  <option value="drums">Drums</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="lessonFormat">Lesson Format:</label><br>
-                <select id="lessonFormat" name="lessonFormat" required>
-                  <option value="">Select Format</option>
-                  <option value="inPerson">In-Person</option>
-                  <option value="virtual">Virtual</option>
-                  <option value="hybrid">Hybrid</option>
-                </select>
-              </div>
-              <div>
-                <label for="lessonTime">Preferred Lesson Time:</label><br>
-                <select id="lessonTime" name="lessonTime" required>
-                  <option value="">Select Time</option>
-                  <option value="2-4pm">2:00 PM - 4:00 PM</option>
-                  <option value="4-6pm">4:00 PM - 6:00 PM</option>
-                  <option value="6-8pm">6:00 PM - 8:00 PM</option>
-                  <option value="8-10pm">8:00 PM - 10:00 PM</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="lessonDays">Preferred Lesson Days:</label><br>
-                <select id="lessonDays" name="lessonDays[]" multiple required>
-                  <option value="monday">Monday</option>
-                  <option value="tuesday">Tuesday</option>
-                  <option value="wednesday">Wednesday</option>
-                  <option value="thursday">Thursday</option>
-                  <option value="friday">Friday</option>
-                  <option value="saturday">Saturday</option>
-                </select>
-              </div>
-              <div>
-                <label for="city">City:</label><br>
-                <input type="text" id="city" name="city" required>
-              </div>
-              <div>
-                <label for="state">State:</label><br>
-                <input type="text" id="state" name="state" required>
-              </div>
-              <div>
-                <label for="frequency">Lesson Frequency:</label><br>
-                <select id="frequency" name="frequency" required>
-                  <option value="">Select Frequency</option>
-                  <option value="weekly">Weekly</option>
-                  <option value="biweekly">Biweekly</option>
-                  <option value="alacarte">A la Carte</option>
-                </select>
-              </div>
-              <div>
-                <label for="relationship">Your Relationship to Student:</label><br>
-                <select id="relationship" name="relationship" required>
-                  <option value="">Select Relationship</option>
-                  <option value="self">Self</option>
-                  <option value="parent">Parent</option>
-                  <option value="guardian">Guardian</option>
-                  <option value="nanny">Nanny</option>
-                  <option value="grandparent">Grandparent</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="aboutStudent">About This Student (Optional):</label><br>
-                <textarea id="aboutStudent" name="aboutStudent" rows="5" cols="40" maxlength="5000"></textarea>
-              </div>
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </div>
+        </div> -->
       </section>
     </main>
-    <script src="https://kit.fontawesome.com/6eaf69b5dd.js" crossorigin="anonymous"></script>x`
+    <script src="https://kit.fontawesome.com/6eaf69b5dd.js" crossorigin="anonymous"></script>
     <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/main-nav.js"></script>
     <script type="module" src="./src/instructors.js"></script>
-    <script type="module" src="./src/contact-us-form.js"></script>
   </body>
 </html>

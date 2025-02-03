@@ -2,9 +2,6 @@ const contactUsStart = document.getElementById('contact-us-start')
 const contactUsInstructor = document.getElementById('contact-us-instructor')
 const contactUsStudent = document.getElementById('contact-us-student')
 
-contactUsInstructor.setAttribute('style', 'display: none;')
-contactUsStudent.setAttribute('style', 'display: none;')
-
 const instructorButton = document.getElementById('contact-us-nav-instructor')
 const studentButton = document.getElementById('contact-us-nav-student')
 

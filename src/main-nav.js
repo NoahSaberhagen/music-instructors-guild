@@ -58,8 +58,6 @@ window.addEventListener("scroll", () => {
 
 // swapping body content
 const aboutSection = document.querySelector('#about');
-const instructorsSection = document.querySelector('#instructors')
-const contactUsSection = document.querySelector('#contact-us')
 
 
 const setSectionsStyleNone = () => {
